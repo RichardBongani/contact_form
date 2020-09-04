@@ -24,6 +24,11 @@ form {
     bottom: 70px !important;
 }
 
+nav ul li {
+    margin: 15px;
+    list-style-type: none;
+}
+
 .form_information {
     width: 420px;
     height: 570px;
