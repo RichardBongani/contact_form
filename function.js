@@ -11,6 +11,18 @@ function validate_form(e){
     // validates if the inputs are empty & if they are it warns you
     if(name == '' || email == ''|| telephone == '' || password == ''){
         output.innerHTML = 'Please fill in information';
+    }else{
+        var name_len = name.length;
+        if (name_len <= 3){
+            output.innerHTML = 'Name must be more than 3 chars';
+        }else{
+            var letter = /^[A-Za-z]+$/;
+            if (name.match(letter)){
+                return true;
+            }else{
+                output.innerHTML = 'Name must contain letters only';
+            }
+        }
     }
 }
 document.getElementById('my-form').addEventListener('submit', validate_form, false);
