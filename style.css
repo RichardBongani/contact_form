@@ -19,9 +19,14 @@ button {
     width: 250px;
 }
 
+form {
+    position: relative;
+    bottom: 70px !important;
+}
+
 .form_information {
-    width: 520px;
-    height: 560px;
+    width: 420px;
+    height: 570px;
     background-color: rgba(0,0,0,0.8);
     color: #fff;
     position: absolute;
