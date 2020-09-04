@@ -1,3 +1,4 @@
+// Validation for sign up form:
 // This code handles the form validation
 function validate_form(e){
     e.preventDefault();
