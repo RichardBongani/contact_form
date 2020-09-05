@@ -17,9 +17,7 @@ function login(e){
             if (!passwordl.match(paslog)){
                 logoutput.innerHTML = 'Enter valid password format';
             }else{
-                logoutput.innerHTML = 'Signed in Successfully';
-                window.location.reload();
-                return true;
+                window.location = "home.html";
             }
         }
     }
